@@ -12,6 +12,9 @@
 
 <a class="skip-link" href="#sisalto">Siirry sisältöön</a>
 
+<img class="bg-still" src="assets/img/bg-reel01-still.jpg" alt="" aria-hidden="true">
+<div class="bg-video-overlay" aria-hidden="true"></div>
+
 <header class="site-header" id="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#top" aria-label="Finesse Finnish Finish — etusivu">
@@ -37,6 +40,11 @@
 
   <!-- HERO -->
   <section class="hero" id="top">
+    <video class="hero-video" id="hero-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="assets/video/showcase-1.webm" type="video/webm">
+      <source src="assets/video/showcase-1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
     <canvas id="starfield" aria-hidden="true"></canvas>
     <div class="wrap hero-inner">
       <img src="assets/img/logo-badge-circle.png" alt="Finesse Finnish Finish -tunnusmerkki" class="hero-badge reveal">

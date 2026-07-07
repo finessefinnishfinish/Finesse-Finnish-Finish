@@ -2,6 +2,17 @@
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+/* Hero background video: respect reduced-motion, nudge autoplay */
+const heroVideo = document.getElementById("hero-video");
+if (heroVideo) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    heroVideo.pause();
+  } else {
+    heroVideo.play().catch(() => {});
+  }
+}
+
 /* Mobile nav toggle */
 const navToggle = document.getElementById("nav-toggle");
 const primaryNav = document.getElementById("primary-nav");
