@@ -352,6 +352,12 @@ img { max-width: 100%; display: block; }
 
 .section--alt { background: rgba(220, 232, 250, 0.28); }
 
+.section-mark {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+}
+
 .section-title {
   font-size: clamp(2.6rem, 7vw, 4.2rem);
   margin: 0 0 32px;
