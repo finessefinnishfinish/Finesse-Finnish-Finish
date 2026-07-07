@@ -2,14 +2,17 @@
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* Hero background video: respect reduced-motion, nudge autoplay */
-const heroVideo = document.getElementById("hero-video");
-if (heroVideo) {
+/* Fixed background video: slow it down, respect reduced-motion */
+const bgVideo = document.getElementById("bg-video");
+if (bgVideo) {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReducedMotion) {
-    heroVideo.pause();
+    bgVideo.pause();
+    bgVideo.removeAttribute("src");
+    bgVideo.load();
   } else {
-    heroVideo.play().catch(() => {});
+    bgVideo.playbackRate = 0.5;
+    bgVideo.play().catch(() => {});
   }
 }
 
