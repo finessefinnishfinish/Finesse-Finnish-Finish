@@ -92,15 +92,49 @@ img { max-width: 100%; display: block; }
   .bg-video { display: none; }
 }
 
-/* -------------------- brand gradient text (the FFF wordplay) -------------------- */
+/* -------------------- galaxy-texture text (the FFF brand fill) -------------------- */
 .brand-gradient,
 .nav-word,
-.section-title {
-  font-family: var(--display-font);
-  background: linear-gradient(135deg, #0a1a4a 0%, var(--blue) 35%, var(--blue-mid) 60%, var(--cyan) 100%);
+.section-title,
+.brand-name,
+.hero-title,
+.eyebrow,
+.hero-tagline,
+.hero-desc,
+.lead,
+.split-text p,
+.stat-list strong,
+.stat-list span,
+.card h3,
+.card p,
+.showcase-title,
+.showcase-item figcaption,
+.youtube-link span,
+.quote p,
+.quote cite,
+.staff-card h3,
+.staff-card p,
+.staff-note,
+.contact-social p,
+.contact-form label,
+.footer-by,
+.footer-copy {
+  background-image: url("../assets/img/galaxy-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.section-title,
+.brand-name,
+.hero-title,
+.card h3,
+.staff-card h3,
+.showcase-title {
+  font-family: var(--display-font);
   font-weight: 400;
   letter-spacing: 0.04em;
 }
@@ -254,7 +288,6 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.22em;
   font-weight: 700;
   font-size: 0.82rem;
-  color: var(--blue-mid);
   margin: 0 0 18px;
 }
 
@@ -270,7 +303,6 @@ img { max-width: 100%; display: block; }
   font-size: clamp(2rem, 5vw, 3rem);
   letter-spacing: 0.06em;
   margin: 4px 0 10px;
-  color: var(--blue-deep);
 }
 
 .hero-tagline {
@@ -278,13 +310,11 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.12em;
   font-weight: 700;
   font-size: 0.85rem;
-  color: var(--muted);
   margin: 0 0 26px;
 }
 
 .hero-desc {
   max-width: 56ch;
-  color: var(--muted);
   font-size: 1.05rem;
   margin: 0 0 32px;
 }
@@ -320,7 +350,7 @@ img { max-width: 100%; display: block; }
   line-height: 1;
 }
 
-.lead { font-size: 1.15rem; color: var(--ink); max-width: 65ch; }
+.lead { font-size: 1.15rem; max-width: 65ch; }
 
 .split {
   display: grid;
@@ -330,8 +360,6 @@ img { max-width: 100%; display: block; }
   margin-top: 12px;
 }
 
-.split-text p { color: var(--muted); }
-.split-text p.lead { color: var(--ink); }
 
 .split-photo {
   width: 100%;
@@ -361,9 +389,8 @@ img { max-width: 100%; display: block; }
 .stat-list strong {
   font-family: var(--display-font);
   font-size: 1.5rem;
-  color: var(--blue-mid);
 }
-.stat-list span { color: var(--muted); font-size: 0.88rem; }
+.stat-list span { font-size: 0.88rem; }
 
 /* card grid */
 .card-grid {
@@ -379,8 +406,8 @@ img { max-width: 100%; display: block; }
   padding: 24px;
   box-shadow: 0 12px 30px -22px rgba(10, 26, 74, 0.5);
 }
-.card h3 { margin: 0 0 10px; color: var(--blue-deep); font-size: 1.05rem; }
-.card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.card h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.card p { margin: 0; font-size: 0.92rem; }
 .card--media img {
   margin-top: 16px;
   border-radius: 10px;
@@ -390,7 +417,6 @@ img { max-width: 100%; display: block; }
 .showcase { margin-top: 56px; }
 .showcase-title {
   font-family: var(--display-font);
-  color: var(--blue-deep);
   font-size: 1.6rem;
   letter-spacing: 0.03em;
   margin-bottom: 18px;
@@ -418,7 +444,6 @@ img { max-width: 100%; display: block; }
 }
 .showcase-item figcaption {
   font-family: var(--display-font);
-  color: var(--blue-mid);
   letter-spacing: 0.06em;
   text-align: center;
   padding-top: 10px;
@@ -456,12 +481,10 @@ img { max-width: 100%; display: block; }
 }
 .quote p {
   font-size: 1.02rem;
-  color: var(--ink);
   margin: 0 0 14px;
 }
 .quote cite {
   font-style: normal;
-  color: var(--blue-mid);
   font-size: 0.85rem;
   font-weight: 700;
 }
@@ -486,9 +509,9 @@ img { max-width: 100%; display: block; }
   border-radius: 50%;
   margin: 0 auto 16px;
 }
-.staff-card h3 { font-family: var(--display-font); color: var(--blue-deep); font-size: 1.3rem; letter-spacing: 0.03em; margin: 0 0 8px; }
-.staff-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
-.staff-note { margin-top: 24px; color: var(--muted); font-size: 0.9rem; }
+.staff-card h3 { font-family: var(--display-font); font-size: 1.3rem; letter-spacing: 0.03em; margin: 0 0 8px; }
+.staff-card p { font-size: 0.9rem; margin: 0; }
+.staff-note { margin-top: 24px; font-size: 0.9rem; }
 
 /* contact */
 .contact-grid {
@@ -508,7 +531,6 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   gap: 6px;
   font-size: 0.85rem;
-  color: var(--ink);
   font-weight: 600;
 }
 .contact-form input,
@@ -529,7 +551,7 @@ img { max-width: 100%; display: block; }
 }
 .contact-form button { align-self: flex-start; margin-top: 6px; }
 
-.contact-social p { color: var(--ink); margin: 0 0 14px; font-weight: 600; }
+.contact-social p { margin: 0 0 14px; font-weight: 600; }
 .social-row { display: flex; gap: 16px; }
 .social-row a {
   width: 46px;
@@ -578,11 +600,10 @@ img { max-width: 100%; display: block; }
 .footer-by {
   font-family: var(--display-font);
   letter-spacing: 0.1em;
-  color: var(--blue-deep);
   font-size: 1.2rem;
   margin: 0 0 6px;
 }
-.footer-copy { color: var(--muted); font-size: 0.82rem; margin: 0; }
+.footer-copy { font-size: 0.82rem; margin: 0; }
 
 /* ==========================================================================
    Reveal-on-scroll
