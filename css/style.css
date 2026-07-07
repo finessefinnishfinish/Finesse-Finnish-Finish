@@ -133,7 +133,8 @@ img { max-width: 100%; display: block; }
 .hero-title,
 .card h3,
 .staff-card h3,
-.showcase-title {
+.showcase-title,
+.nav-word {
   font-family: var(--display-font);
   font-weight: 400;
   letter-spacing: 0.04em;
