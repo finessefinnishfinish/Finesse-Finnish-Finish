@@ -277,11 +277,11 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-badge {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  box-shadow: 0 10px 30px -10px rgba(10, 26, 74, 0.35);
-  margin-bottom: 18px;
+  width: 168px;
+  height: 168px;
+  border-radius: 28px;
+  box-shadow: 0 16px 36px -12px rgba(10, 26, 74, 0.45);
+  margin-bottom: 22px;
 }
 
 .eyebrow {
