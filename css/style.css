@@ -344,6 +344,16 @@ img { max-width: 100%; display: block; }
   opacity: 0.18;
   z-index: 0;
   pointer-events: none;
+  animation: finland-float 7s ease-in-out infinite;
+}
+
+@keyframes finland-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-22px) rotate(2deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-finland { animation: none; }
 }
 
 /* ==========================================================================
@@ -362,6 +372,46 @@ img { max-width: 100%; display: block; }
   width: 48px;
   height: 48px;
   margin-bottom: 14px;
+}
+
+.offer-eyebrow {
+  font-family: var(--display-font);
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 -8px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.offer-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 18px 0 40px;
+}
+
+.offer-arrow-badge {
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px -12px rgba(10, 26, 74, 0.4);
+}
+
+.offer-arrow {
+  width: 90px;
+  height: 64px;
+  background-image: linear-gradient(140deg, #180404 0%, #7a1420 45%, #2a0808 100%);
+}
+
+.offer-arrow--right { clip-path: polygon(0 15%, 60% 15%, 60% 0, 100% 50%, 60% 100%, 60% 85%, 0 85%); }
+.offer-arrow--left { clip-path: polygon(100% 15%, 40% 15%, 40% 0, 0 50%, 40% 100%, 40% 85%, 100% 85%); }
+
+@media (max-width: 640px) {
+  .offer-arrows { gap: 12px; }
+  .offer-arrow { width: 50px; height: 40px; }
+  .offer-arrow-badge { width: 72px; height: 72px; }
 }
 
 .section-title {
