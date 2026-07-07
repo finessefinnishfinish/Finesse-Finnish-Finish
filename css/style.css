@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
 .bg-video-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.22);
   z-index: -1;
   pointer-events: none;
 }
@@ -113,7 +113,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   height: var(--header-h);
@@ -308,10 +308,10 @@ img { max-width: 100%; display: block; }
 .section {
   position: relative;
   padding: 90px 0;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.28);
 }
 
-.section--alt { background: rgba(238, 243, 252, 0.86); }
+.section--alt { background: rgba(220, 232, 250, 0.28); }
 
 .section-title {
   font-size: clamp(2.6rem, 7vw, 4.2rem);
@@ -550,7 +550,7 @@ img { max-width: 100%; display: block; }
    ========================================================================== */
 
 .site-footer {
-  background: rgba(238, 243, 252, 0.9);
+  background: rgba(220, 232, 250, 0.32);
   padding: 48px 0 32px;
   text-align: center;
   border-top: 1px solid var(--line);
