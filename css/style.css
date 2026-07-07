@@ -240,6 +240,15 @@ img { max-width: 100%; display: block; }
 }
 .btn--primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(15, 63, 191, 0.7); }
 
+.btn--galaxy {
+  background-image: linear-gradient(rgba(5, 11, 31, 0.55), rgba(5, 11, 31, 0.55)), url("../assets/img/galaxy-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-shadow: 0 8px 20px -8px rgba(15, 63, 191, 0.6);
+}
+.btn--galaxy:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(15, 63, 191, 0.7); }
+
 .btn--ghost {
   background: transparent;
   border-color: var(--blue-mid);
