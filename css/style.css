@@ -534,6 +534,30 @@ img { max-width: 100%; display: block; }
 .youtube-link img { border-radius: 6px; }
 .youtube-link:hover { color: var(--blue-deep); }
 
+/* client logos */
+.client-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 40px;
+  margin: 8px 0 44px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.client-name {
+  font-family: var(--display-font);
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  opacity: 0.75;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.client-name:hover {
+  opacity: 1;
+  color: var(--blue-mid);
+}
+
 /* quotes */
 .quote-grid {
   display: grid;
