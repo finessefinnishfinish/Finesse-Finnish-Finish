@@ -6,11 +6,11 @@
   --ink: #0a1730;
   --muted: #57678a;
   --bg: #ffffff;
-  --bg-soft: #eef3fc;
-  --blue-deep: #050b1f;
-  --blue: #0f3fbf;
-  --blue-mid: #1a63e0;
-  --cyan: #159fd6;
+  --bg-soft: #eef8fd;
+  --blue-deep: #10102a;
+  --blue: #0d3aac;
+  --blue-mid: #0f60cb;
+  --cyan: #1cd4e0;
   --line: #dfe6f4;
   --radius: 16px;
   --wrap: 1180px;
@@ -148,20 +148,13 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background-image: linear-gradient(rgba(5, 11, 31, 0.82), rgba(5, 11, 31, 0.82)), url("../assets/img/galaxy-texture.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
   height: var(--header-h);
   display: flex;
   align-items: center;
-}
-
-.site-header .nav-word,
-.site-header .brand-name {
-  filter: brightness(2.3) saturate(1.2);
 }
 
 .header-inner {
