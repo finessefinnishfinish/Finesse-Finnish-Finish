@@ -148,12 +148,20 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(rgba(5, 11, 31, 0.82), rgba(5, 11, 31, 0.82)), url("../assets/img/galaxy-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   height: var(--header-h);
   display: flex;
   align-items: center;
+}
+
+.site-header .nav-word,
+.site-header .brand-name {
+  filter: brightness(2.3) saturate(1.2);
 }
 
 .header-inner {
